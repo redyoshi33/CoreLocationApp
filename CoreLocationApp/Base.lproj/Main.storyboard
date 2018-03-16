@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreLocationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsPointsOfInterest="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2X-zj-qmV">
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                            </mapView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dragon Balls:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vH-Gc-Llp">
+                                <rect key="frame" x="0.0" y="36" width="375" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6vH-Gc-Llp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="GoI-dv-T7E"/>
+                            <constraint firstItem="V2X-zj-qmV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TYf-0c-XMm"/>
+                            <constraint firstItem="6vH-Gc-Llp" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XQV-cl-McE"/>
+                            <constraint firstItem="6vH-Gc-Llp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bym-05-8wR"/>
+                            <constraint firstItem="V2X-zj-qmV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cAa-fL-dv2"/>
+                            <constraint firstItem="V2X-zj-qmV" firstAttribute="top" secondItem="6vH-Gc-Llp" secondAttribute="bottom" id="rSP-Hz-av3"/>
+                            <constraint firstItem="V2X-zj-qmV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tXK-v3-Ueu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="dragonballLabel" destination="6vH-Gc-Llp" id="6v4-BV-ab5"/>
+                        <outlet property="map" destination="V2X-zj-qmV" id="snm-O0-pUs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="112.89355322338831"/>
+        </scene>
+    </scenes>
+</document>
